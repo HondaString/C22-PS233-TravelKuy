@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Travel Kuy</string>
     <string name="app">Selamat Datang</string>
+    <string name="daftar_kategori">Daftar Kategori</string>
 </resources>

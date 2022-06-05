@@ -51,6 +51,14 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window w = getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+        else{
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
+
         tvToday = findViewById(R.id.tvDate);
         rvMainMenu = findViewById(R.id.rvMainMenu);
         GridLayoutManager mLayoutManager = new GridLayoutManager(this, 2,

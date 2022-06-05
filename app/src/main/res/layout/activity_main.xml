@@ -24,7 +24,7 @@
                 android:layout_marginTop="10dp"
                 android:textAlignment="center"
                 android:fontFamily="@font/robotoo"
-                android:text="Daftar Kategori"
+                android:text="@string/daftar_kategori"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />

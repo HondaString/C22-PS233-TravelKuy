@@ -59,12 +59,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
                             android:drawablePadding="10dp"
-                            android:drawableTint="@color/colorPrimary"
                             android:textColor="@android:color/black"
                             android:textSize="13sp"
-                            tools:ignore="UnusedAttribute" />
+                            tools:ignore="UnusedAttribute"
+                            app:drawableTint="@android:color/black"
+                            app:drawableStartCompat="@drawable/ic_baseline_calendar_today_24" />
 
                     </LinearLayout>
 

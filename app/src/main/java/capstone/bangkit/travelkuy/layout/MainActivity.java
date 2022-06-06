@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
 
         tvToday = findViewById(R.id.tvDate);
         rvMainMenu = findViewById(R.id.rvMainMenu);
-        GridLayoutManager mLayoutManager = new GridLayoutManager(this, 2,
+        GridLayoutManager mLayoutManager = new GridLayoutManager(this, 1,
                 RecyclerView.VERTICAL, false);
         rvMainMenu.setLayoutManager(mLayoutManager);
         gridMargin = new LayoutMarginDecoration(2);
@@ -87,8 +87,6 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
         lsMainMenu.add(mdlMainMenu);
         mdlMainMenu = new ModelMain("Kuliner", R.drawable.ic_cafe);
         lsMainMenu.add(mdlMainMenu);
-        mdlMainMenu = new ModelMain("Tempat Ibadah", R.drawable.masjid);
-        lsMainMenu.add(mdlMainMenu);
         mdlMainMenu = new ModelMain("Wisata", R.drawable.ic_destination);
         lsMainMenu.add(mdlMainMenu);
 
@@ -104,9 +102,6 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
                 break;
             case "Kuliner":
                 startActivityForResult(new Intent(MainActivity.this, KulinerActivity.class), 1);
-                break;
-            case "Tempat Ibadah":
-                startActivityForResult(new Intent(MainActivity.this, PrayPlaceActivity.class), 1);
                 break;
             case "Wisata":
                 startActivityForResult(new Intent(MainActivity.this, WisataActivity.class), 1);

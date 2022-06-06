@@ -3,6 +3,7 @@ package capstone.bangkit.travelkuy.adapter;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -52,7 +53,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
                 .into(holder.imgHotel);
 
         holder.tvNamaHotel.setText(data.getTxtNamaHotel());
-        holder.rlListHotel.setOnClickListener(new View.OnClickListener() {
+        holder.rlListHotel.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 onSelectData.onSelected(data);

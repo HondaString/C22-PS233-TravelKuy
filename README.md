@@ -32,5 +32,5 @@ Here is the initial project plan!
 | Rosalina Wijayanti  | A2006F0489  | - | create userflow in figma, Project Plan, Design Validation, Final Report | PENDING | Mobile Developer |
 | Fachira Ayu Rahma | C2144F1645  | https://github.com/rarahma20 | Recurement Engineering, Performance Monitoring | PENDING | Cloud Computing |
 | Afri Handri Setiawan | C2262G2266 | https://github.com/Afri392 | Integrate System | PENDING | Cloud Computing |
-| Lutfan Zainul Haq | M7225F2086 | https://github.com/aluthxander | Research, Create Marchine Learning Model | PENDING | Marchine Learning |
-| Fransiskus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 | Testing, Final Report | PENDING | Marchine Learning |
+| Lutfan Zainul Haq | M7225F2086 | https://github.com/aluthxander | Research, Create Marchine Learning Model | PENDING | Machine Learning |
+| Fransiskus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 | Testing, Final Report | PENDING | Machine Learning |

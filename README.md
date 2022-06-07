@@ -33,4 +33,4 @@ Here is the initial project plan!
 | Fachira Ayu Rahma | C2144F1645  | - |  |  | Cloud Computing |
 | Afri Handri Setiawan | C2262G2266 | https://github.com/Afri392 |  |  | Cloud Computing |
 | Lutfan Zainul Haq | M7225F2086 | https://github.com/aluthxander |  |  | Marchine Learning |
-| Fransisikus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 |  |  | Marchine Learning |
+| Fransiskus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 |  |  | Marchine Learning |

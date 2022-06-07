@@ -20,7 +20,7 @@
 ## Capstone Project Team: 
 | Name | Bangkit-ID | Github-Profile | Task | Progress On Task | Learning Path |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| Andika Kurnia Sandi Yuda  | A2193F1828  | https://github.com/BabeZxyuan | Membuat Prototype Figma, Membuat Apps dengan Android Studio, Done | Mobile Developer |
+| Andika Kurnia Sandi Yuda  | A2193F1828  | https://github.com/BabeZxyuan | Membuat Prototype Figma, Membuat Apps dengan Android Studio, | DONE |  Mobile Developer |
 | Rosalina Wijayanti  | A2006F0489  | - |  |  | Mobile Developer |
 | Fachira Ayu Rahma | C2144F1645  | - |  |  | Cloud Computing |
 | Afri Handri Setiawan | C2262G2266 | https://github.com/Afri392 |  |  | Cloud Computing |

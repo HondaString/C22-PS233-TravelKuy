@@ -1,6 +1,6 @@
-id,place_name,category,rating,price
-94,Sumur Gumuling,Taman Hiburan,4.5,7000
-97,Monumen Yogya Kembali,Budaya,4.5,15000
-117,The World Landmarks - Merapi Park Yogyakarta,Taman Hiburan,4.2,22000
-157,Pantai Baron,Bahari,4.4,10000
-164,Pintoe Langit Dahromo,Cagar Alam,4.4,2500
+id,place_name,category,rating,price,image
+91,Pantai Ngobaran,Bahari,4.6,5000,https://travelspromo.com/wp-content/uploads/2020/04/Suasana-pantai-ngobaran-penuh-dengan-ornamen-1024x576.jpg
+97,"Bukit Paralayang, Watugupit",Cagar Alam,4.7,5000,https://4.bp.blogspot.com/-WB2gD0LMRiY/XMHHB1DXguI/AAAAAAAABuw/BuL63eYx3lg08feykWBXrMLXfnQ75MQMACLcBGAs/s1600/tempat-sunset-jogja.jpg
+108,Pantai Indrayanti,Bahari,4.5,10000,https://osccdn.medcom.id/images/content/2021/05/31/8a863fa902ea65c3c45feea29699155f.jpg
+112,Museum Gunung Merapi,Budaya,4.4,10000,https://oyindonesia.id/wp-content/uploads/2020/04/Museum-Gunung-Merapi-Geo-Wisata-di-Kabupaten-Sleman.png
+117,Pantai Sundak,Bahari,4.5,5000,https://4.bp.blogspot.com/-X4GBEIExq2M/WjS4s-LOBgI/AAAAAAAAF28/vJ8eBawQirUu4hY0P4PDWxNMlywHuHpYACLcBGAs/s1600/sundak.jpg

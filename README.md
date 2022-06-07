@@ -2,12 +2,20 @@
 
 <p align="center">
   <img src="https://github.com/perfect-less/KemanaKita/blob/main/bangkit_banner.png">
-  <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/0ecccc80caed7d3013433880e099e4fb.png">
 </p>
 
+In this project we tried to make exploring some cities in Indonesia much more fun and enjoyable. We aim to provide you with the best tour guide on your phone!. We will develop this project gradually!
+Here is the initial project plan!
+
+- Build an initial application with an initial model consisting of 3 treats, namely: Culinary, Hotel, Tourism
+- Build a model to cover every fantastic place you can visit in Jogja, Bali, and Palembang!, add features in every choice and freely choose whether restaurants, cafes or places by the typical of the city!.
+- Build a model to cover fun places in 3 selected cities and add features to let you share your experiences and thoughts about those places!
+- Lastly hopefully this app will cover all the fantastic and heavenly places that Indonesia has to offer for you! Rest assured! we will accompany you to the end of heaven! Let us know your destination at TravelKuy!
 
 ## Project Documents:
 - Project Brief : ```Also Hyperlink```
+- Prototype figma : https://www.figma.com/proto/aVZWihUS3mRin0tJVIi23G/TravelKuy?node-id=1%3A5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2
+- UserFlow Figma : https://www.figma.com/file/aVZWihUS3mRin0tJVIi23G/TravelKuy?node-id=24%3A2
 - Final presentation : ```Also Hyperlink```
 
 ## Project Resource: 

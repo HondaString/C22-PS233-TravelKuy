@@ -86,7 +86,7 @@
                                 android:background="@drawable/bg_circle_radius_primary"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_dtl_wisata"
-                                android:tint="@android:color/white" />
+                                app:tint="@android:color/white" />
 
                             <TextView
                                 android:id="@+id/tvNamaWisata"
@@ -112,7 +112,7 @@
                                 android:background="@drawable/bg_circle_radius_primary"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_dtl_desc"
-                                android:tint="@android:color/white" />
+                                app:tint="@android:color/white" />
 
                             <TextView
                                 android:id="@+id/tvDescWisata"

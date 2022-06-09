@@ -86,7 +86,7 @@
                                 android:background="@drawable/bg_circle_radius_primary"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_dtl_hotel"
-                                android:tint="@android:color/white" />
+                                app:tint="@android:color/white" />
 
                             <TextView
                                 android:id="@+id/tvNamaHotel"
@@ -112,7 +112,7 @@
                                 android:background="@drawable/bg_circle_radius_primary"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_dtl_loc"
-                                android:tint="@android:color/white" />
+                                app:tint="@android:color/white" />
 
                             <TextView
                                 android:id="@+id/tvAddressHotel"
@@ -138,7 +138,7 @@
                                 android:background="@drawable/bg_circle_radius_primary"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_dtl_phone"
-                                android:tint="@android:color/white" />
+                                app:tint="@android:color/white" />
 
                             <TextView
                                 android:id="@+id/tvPhoneHotel"

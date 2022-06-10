@@ -62,7 +62,7 @@ public class KulinerAdapter extends RecyclerView.Adapter<KulinerAdapter.ViewHold
     }
 
     //Class Holder
-    class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView tvKuliner;
         public TextView tvKategori;

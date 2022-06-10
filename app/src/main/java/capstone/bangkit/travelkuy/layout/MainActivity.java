@@ -1,6 +1,7 @@
 package capstone.bangkit.travelkuy.layout;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -10,12 +11,22 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.load.model.Model;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -23,15 +34,21 @@ import java.util.List;
 
 import capstone.bangkit.travelkuy.R;
 import capstone.bangkit.travelkuy.adapter.MainAdapter;
+import capstone.bangkit.travelkuy.adapter.RecomAdapter;
 import capstone.bangkit.travelkuy.dekorasi.LayoutMarginDecoration;
+import capstone.bangkit.travelkuy.model.ModelHotel;
 import capstone.bangkit.travelkuy.model.ModelMain;
 
-public class MainActivity extends AppCompatActivity implements MainAdapter.onSelectData {
+public class MainActivity extends AppCompatActivity implements MainAdapter.onSelectData, RecomAdapter.onSelectData {
 
     RecyclerView rvMainMenu;
+    RecyclerView rvRecom;
     LayoutMarginDecoration gridMargin;
     ModelMain mdlMainMenu;
+    ProgressDialog progressDialog;
     List<ModelMain> lsMainMenu = new ArrayList<>();
+    List<ModelHotel> modelHotel = new ArrayList<>();
+    RecomAdapter recomAdapter;
     TextView tvToday;
     String hariIni;
 
@@ -61,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
 
         tvToday = findViewById(R.id.tvDate);
         rvMainMenu = findViewById(R.id.rvMainMenu);
-        GridLayoutManager mLayoutManager = new GridLayoutManager(this, 1,
+        GridLayoutManager mLayoutManager = new GridLayoutManager(this, 3,
                 RecyclerView.VERTICAL, false);
         rvMainMenu.setLayoutManager(mLayoutManager);
         gridMargin = new LayoutMarginDecoration(2);
@@ -73,6 +90,66 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
         hariIni = (String) DateFormat.format("EEEE", dateNow);
         getToday();
         setMenu();
+
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setTitle("Mohon Tunggu");
+        progressDialog.setCancelable(false);
+        progressDialog.setMessage("Sedang menampilkan data...");
+
+        rvRecom = findViewById(R.id.rvRecom);
+        rvRecom.setHasFixedSize(true);
+        rvRecom.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        getRecom();
+    }
+    private void getRecom()
+    {
+        String json;
+        progressDialog.show();
+
+
+        try {
+            progressDialog.dismiss();
+
+
+            InputStream is = getAssets().open("recomHotel.json");
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+            JSONArray jsonArray = new JSONArray(json);
+
+            for(int i = 0; i<jsonArray.length();i++)
+            {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                ModelHotel data = new ModelHotel();
+                data.setTxtNamaHotel(obj.getString("Name"));
+                data.setTxtAlamatHotel(obj.getString("Addres"));
+                data.setKoordinat(obj.getString("Coordinate"));
+                data.setGambarHotel(obj.getString("Images"));
+                modelHotel.add(data);
+                showRecom();
+            }
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(MainActivity.this,
+                    "Gagal menampilkan data!", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    private void showRecom() {
+        recomAdapter = new RecomAdapter(MainActivity.this, modelHotel, this);
+        rvRecom.setAdapter(recomAdapter);
     }
 
     private void getToday() {
@@ -94,19 +171,10 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
         rvMainMenu.setAdapter(myAdapter);
     }
 
-    @Override
-    public void onSelected(ModelMain mdlMain) {
-        switch (mdlMain.getTxtName()) {
-            case "Hotel":
-                startActivityForResult(new Intent(MainActivity.this, HotelActivity.class), 1);
-                break;
-            case "Kuliner":
-                startActivityForResult(new Intent(MainActivity.this, KulinerActivity.class), 1);
-                break;
-            case "Wisata":
-                startActivityForResult(new Intent(MainActivity.this, WisataActivity.class), 1);
-                break;
-        }
+    public void onSelected(ModelHotel modelHotel) {
+        Intent intent = new Intent(MainActivity.this, DetailHotelActivity.class);
+        intent.putExtra("detailHotel", modelHotel);
+        startActivity(intent);
     }
 
     //set Transparent Status bar
@@ -120,5 +188,20 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
             winParams.flags &= ~bits;
         }
         win.setAttributes(winParams);
+    }
+
+    @Override
+    public void onSelected(ModelMain mdlMain) {
+        switch (mdlMain.getTxtName()) {
+            case "Hotel":
+                startActivityForResult(new Intent(MainActivity.this, HotelActivity.class), 1);
+                break;
+            case "Kuliner":
+                startActivityForResult(new Intent(MainActivity.this, KulinerActivity.class), 1);
+                break;
+            case "Wisata":
+                startActivityForResult(new Intent(MainActivity.this, WisataActivity.class), 1);
+                break;
+        }
     }
 }

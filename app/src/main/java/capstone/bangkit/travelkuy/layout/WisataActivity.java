@@ -45,7 +45,7 @@ public class WisataActivity extends AppCompatActivity implements WisataAdapter.o
         setContentView(R.layout.activity_wisata);
 
         tbWisata = findViewById(R.id.toolbar_wisata);
-        tbWisata.setTitle("Daftar Wisata Jogja");
+        tbWisata.setTitle("Daftar Wisata");
         setSupportActionBar(tbWisata);
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

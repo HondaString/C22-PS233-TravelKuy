@@ -2,7 +2,7 @@ package capstone.bangkit.travelkuy.model;
 
 import java.io.Serializable;
 
-public class ModelHotel implements Serializable {
+public class    ModelHotel implements Serializable {
 
     private String txtNamaHotel, txtAlamatHotel, txtNoTelp, Koordinat, GambarHotel;
 

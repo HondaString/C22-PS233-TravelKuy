@@ -27,6 +27,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +39,7 @@ public class HotelActivity extends AppCompatActivity implements HotelAdapter.onS
     LayoutMarginDecoration gridMargin;
     ProgressDialog progressDialog;
     List<ModelHotel> modelHotel = new ArrayList<>();
-    Toolbar tbHotel;
+            Toolbar tbHotel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,51 @@ public class HotelActivity extends AppCompatActivity implements HotelAdapter.onS
         rvHotel.setLayoutManager(new LinearLayoutManager(this));
 
         getHotel();
+    }
+
+    private void getJson()
+    {
+        String json;
+        progressDialog.show();
+
+
+        try {
+            progressDialog.dismiss();
+
+
+            InputStream is = getAssets().open("recomHotel.json");
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+            JSONArray jsonArray = new JSONArray(json);
+
+            for(int i = 0; i<jsonArray.length();i++)
+            {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                ModelHotel dataApi = new ModelHotel();
+                dataApi.setTxtNamaHotel(obj.getString("Name"));
+                dataApi.setTxtAlamatHotel(obj.getString("Addres"));
+                dataApi.setKoordinat(obj.getString("Coordinate"));
+                dataApi.setGambarHotel(obj.getString("Images"));
+                modelHotel.add(dataApi);
+                showHotel();
+            }
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(HotelActivity.this,
+                    "Gagal menampilkan data!", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private void getHotel() {

@@ -20,6 +20,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +29,7 @@ import capstone.bangkit.travelkuy.R;
 import capstone.bangkit.travelkuy.adapter.KulinerAdapter;
 import capstone.bangkit.travelkuy.api.Api;
 import capstone.bangkit.travelkuy.dekorasi.LayoutMarginDecoration;
+import capstone.bangkit.travelkuy.model.ModelHotel;
 import capstone.bangkit.travelkuy.model.ModelKuliner;
 import capstone.bangkit.travelkuy.utils.Tools;
 

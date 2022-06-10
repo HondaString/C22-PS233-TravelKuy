@@ -27,6 +27,7 @@ public class DetailHotelActivity extends AppCompatActivity implements OnMapReady
     String NameHotel, AddressHotel, PhoneHotel;
     ModelHotel modelHotel;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );

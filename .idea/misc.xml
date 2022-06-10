@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/drawable-v24/ic_24px_star.xml" value="0.1" />
+        <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/drawable-v24/rounded_linear_layout.xml" value="0.1" />
         <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_detail_hotel.xml" value="0.371875" />
         <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_detail_kuliner.xml" value="0.371875" />
         <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_detail_wisata.xml" value="0.371875" />
-        <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_hotel.xml" value="0.371875" />
+        <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_hotel.xml" value="0.33" />
         <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_kuliner.xml" value="0.371875" />
+        <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Dika/Documents/GitHub/C22-PS233-TravelKuy/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/Lenovo/Documents/C22-PS233-TravelKuy/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Users/Lenovo/Documents/C22-PS233-TravelKuy/app/src/main/res/layout/activity_splash_screen.xml" value="0.209375" />

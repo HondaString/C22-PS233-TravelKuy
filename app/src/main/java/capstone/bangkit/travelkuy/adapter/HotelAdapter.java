@@ -22,9 +22,9 @@ import capstone.bangkit.travelkuy.model.ModelHotel;
 
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> {
 
-    private List<ModelHotel> items;
-    private HotelAdapter.onSelectData onSelectData;
-    private Context mContext;
+    private final List<ModelHotel> items;
+    private final HotelAdapter.onSelectData onSelectData;
+    private final Context mContext;
 
     public interface onSelectData {
         void onSelected(ModelHotel modelNews);
@@ -53,12 +53,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
                 .into(holder.imgHotel);
 
         holder.tvNamaHotel.setText(data.getTxtNamaHotel());
-        holder.rlListHotel.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onSelectData.onSelected(data);
-            }
-        });
+        holder.rlListHotel.setOnClickListener(v -> onSelectData.onSelected(data));
     }
 
     @Override

@@ -20,7 +20,7 @@ Here is the initial project plan!
 
 ## Project Resource: 
 - Paper Reference: 
-    1. ```Contoh paper 1```
+    1. [```Contoh paper 1```](https://api2.kemenparekraf.go.id/storage/app/uploads/public/622/b18/b5b/622b18b5b058e991538330.pdf)
     2. ```Contoh paper 2```
     3. ```dst```
     

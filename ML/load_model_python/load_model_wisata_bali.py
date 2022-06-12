@@ -15,13 +15,13 @@ df = rating.copy()
 
 def dict_encoder(col, data=df):
 
-  # Mengubah kolom suatu dataframe menjadi list tanpa nilai yang sama
-  unique_val = data[col].unique().tolist()
-  # Melakukan encoding value kolom suatu dataframe ke angka
-  val_to_val_encoded = {x: i for i, x in enumerate(unique_val)}
-  # Melakukan proses encoding angka ke value dari kolom suatu dataframe
-  val_encoded_to_val = {i: x for i, x in enumerate(unique_val)}
-  return val_to_val_encoded, val_encoded_to_val
+    # Mengubah kolom suatu dataframe menjadi list tanpa nilai yang sama
+    unique_val = data[col].unique().tolist()
+    # Melakukan encoding value kolom suatu dataframe ke angka
+    val_to_val_encoded = {x: i for i, x in enumerate(unique_val)}
+    # Melakukan proses encoding angka ke value dari kolom suatu dataframe
+    val_encoded_to_val = {i: x for i, x in enumerate(unique_val)}
+    return val_to_val_encoded, val_encoded_to_val
 
 user_to_user_encoded, user_encoded_to_user = dict_encoder('User_Id')
 
@@ -84,17 +84,17 @@ class RecommenderNet(tf.keras.Model):
     )
     self.places_bias = layers.Embedding(num_places, 1) # layer embedding places bias
  
-  def call(self, inputs):
-    user_vector = self.user_embedding(inputs[:,0]) # memanggil layer embedding 1
-    user_bias = self.user_bias(inputs[:, 0]) # memanggil layer embedding 2
-    places_vector = self.places_embedding(inputs[:, 1]) # memanggil layer embedding 3
-    places_bias = self.places_bias(inputs[:, 1]) # memanggil layer embedding 4
- 
-    dot_user_places = tf.tensordot(user_vector, places_vector, 2) 
- 
-    x = dot_user_places + user_bias + places_bias
+    def call(self, inputs):
+        user_vector = self.user_embedding(inputs[:,0]) # memanggil layer embedding 1
+        user_bias = self.user_bias(inputs[:, 0]) # memanggil layer embedding 2
+        places_vector = self.places_embedding(inputs[:, 1]) # memanggil layer embedding 3
+        places_bias = self.places_bias(inputs[:, 1]) # memanggil layer embedding 4
     
-    return tf.nn.sigmoid(x) # activation sigmoid
+        dot_user_places = tf.tensordot(user_vector, places_vector, 2) 
+    
+        x = dot_user_places + user_bias + places_bias
+        
+        return tf.nn.sigmoid(x) # activation sigmoid
 
 model_load = RecommenderNet(num_users, num_place, 50) # inisialisasi model
  
@@ -134,15 +134,7 @@ top_ratings_indices = ratings.argsort()[-5:][::-1]
 recommended_place_ids = [
     place_encoded_to_place.get(place_not_visited[x][0]) for x in top_ratings_indices
 ]
- 
 
-print('')
-print('----' * 15)
-print('Top 5 place recommendation')
-print('----' * 15)
- 
 recommended_place = place_df[place_df['id'].isin(recommended_place_ids)]
-for row, i in zip(recommended_place.itertuples(), range(1,8)):
-    print(i,'.', row.place_name, '\n    ', row.category, ',', 'Harga Tiket Masuk ', row.price, ',', 'Rating Wisata ',row.rating, ',', row.image,'\n')
-
-print('==='*15)
+# membuat dataframe menjadi json
+recommended_place.to_json("recommended_wisata_yogyakarta.json")

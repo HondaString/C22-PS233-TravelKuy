@@ -18,9 +18,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-
-import com.bumptech.glide.load.model.Model;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -35,20 +32,25 @@ import java.util.List;
 import capstone.bangkit.travelkuy.R;
 import capstone.bangkit.travelkuy.adapter.MainAdapter;
 import capstone.bangkit.travelkuy.adapter.RecomAdapter;
+import capstone.bangkit.travelkuy.adapter.RecomWisataAdapter;
 import capstone.bangkit.travelkuy.dekorasi.LayoutMarginDecoration;
 import capstone.bangkit.travelkuy.model.ModelHotel;
 import capstone.bangkit.travelkuy.model.ModelMain;
+import capstone.bangkit.travelkuy.model.ModelWisata;
 
-public class MainActivity extends AppCompatActivity implements MainAdapter.onSelectData, RecomAdapter.onSelectData {
+public class MainActivity extends AppCompatActivity implements MainAdapter.onSelectData, RecomAdapter.onSelectData, RecomWisataAdapter.onSelectData {
 
     RecyclerView rvMainMenu;
     RecyclerView rvRecom;
+    RecyclerView rvWisataa;
     LayoutMarginDecoration gridMargin;
     ModelMain mdlMainMenu;
     ProgressDialog progressDialog;
     List<ModelMain> lsMainMenu = new ArrayList<>();
     List<ModelHotel> modelHotel = new ArrayList<>();
+    List<ModelWisata> modelWisata = new ArrayList<>();
     RecomAdapter recomAdapter;
+    RecomWisataAdapter recomWisataAdapter;
     TextView tvToday;
     String hariIni;
 
@@ -95,6 +97,12 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
         progressDialog.setTitle("Mohon Tunggu");
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Sedang menampilkan data...");
+
+        rvWisataa = findViewById(R.id.rvWisataa);
+        rvWisataa.setHasFixedSize(true);
+        rvWisataa.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        getWisataa();
 
         rvRecom = findViewById(R.id.rvRecom);
         rvRecom.setHasFixedSize(true);
@@ -152,6 +160,56 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
         rvRecom.setAdapter(recomAdapter);
     }
 
+    private void getWisataa()
+    {
+        String json;
+        progressDialog.show();
+
+
+        try {
+            progressDialog.dismiss();
+
+
+            InputStream is = getAssets().open("recomWisata.json");
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+            JSONArray jsonArray = new JSONArray(json);
+
+            for(int i = 0; i<jsonArray.length();i++)
+            {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                ModelWisata data = new ModelWisata();
+                data.setIdWisata(obj.getString("id"));
+                data.setTxtNamaWisata(obj.getString("place_name"));
+                data.setGambarWisata(obj.getString("image"));
+                data.setKategoriWisata(obj.getString("category"));
+                modelWisata.add(data);
+                showWisata();
+            }
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        }catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(MainActivity.this,
+                    "Gagal menampilkan data!", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    private void showWisata() {
+        recomWisataAdapter = new RecomWisataAdapter(MainActivity.this, modelWisata, this);
+        rvWisataa.setAdapter(recomWisataAdapter);
+    }
+
     private void getToday() {
         Date date = Calendar.getInstance().getTime();
         String tanggal = (String) DateFormat.format("d MMMM yyyy", date);
@@ -203,5 +261,10 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.onSel
                 startActivityForResult(new Intent(MainActivity.this, WisataActivity.class), 1);
                 break;
         }
+    }
+
+    @Override
+    public void onSelected(ModelWisata modelWisata) {
+
     }
 }

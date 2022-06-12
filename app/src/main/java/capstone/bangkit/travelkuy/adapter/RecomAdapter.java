@@ -61,7 +61,7 @@ public class RecomAdapter extends RecyclerView.Adapter<RecomAdapter.ViewHolder> 
     }
 
     //Class Holder
-    static class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView tvNamaHotel;
         public RelativeLayout rlListHotel;

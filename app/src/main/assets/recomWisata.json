@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "place_name": "The Keranjang Bali",
+        "category": "Rekreasi",
+        "rating": "4.0",
+        "price": "150000",
+        "image": "https://arsitagx-master.s3.ap-southeast-1.amazonaws.com/img-medium/22921/12577/cata-interiors-the-keranjang-bali1571046637-m.jpeg"
+    },
+    {
+        "id": "5",
+        "place_name": "Garuda Wisnu Kencana",
+        "category": "Sejarah",
+        "rating": "4.5",
+        "price": "95000",
+        "image": "https://img.jakpost.net/c/2018/11/28/2018_11_28_59559_1543399591._large.jpg"
+    },
+    {
+        "id": "14",
+        "place_name": "Pantai Tanjung Benoa",
+        "category": "Bahari",
+        "rating": "4.5",
+        "price": "50000",
+        "image": "https://www.referensiwisata.com/wp-content/uploads/2019/05/keindahan-pantai-tanjung-benoa-bali.png"
+    },
+    {
+        "id": "16",
+        "place_name": "Seminyak",
+        "category": "Bahari",
+        "rating": "4.5",
+        "price": "100000",
+        "image": "https://deluxe-escapes.com/wp-content/uploads/2014/05/breeze.jpg"
+    },
+    {
+        "id": "18",
+        "place_name": "Air Terjun Sekumpul",
+        "category": "Cagar Alam",
+        "rating": "4.5",
+        "price": "50000",
+        "image": "https://travelspromo.com/wp-content/uploads/2020/03/Air-Terjun-Sekumpul-Buleleng-Bali-memiliki-dua-buah-aliran-air-terjun-dengan-sumber-air-yang-berbeda-waterfall_sekumpul-e1584965595347.jpg"
+    }
+]

@@ -23,10 +23,6 @@
         <activity android:name=".layout.DetailHotelActivity" />
         <activity android:name=".layout.HotelActivity" />
         <activity android:name=".layout.MainActivity" />
-
-        <activity
-            android:name=".layout.LoginActivity"
-            android:exported="true"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true">

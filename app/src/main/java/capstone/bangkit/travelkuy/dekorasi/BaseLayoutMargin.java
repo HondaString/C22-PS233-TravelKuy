@@ -71,9 +71,12 @@ abstract class BaseLayoutMargin extends RecyclerView.ItemDecoration {
     @NonNull
     private View.OnClickListener onClickItem(final Context context, final View view,
                                              final int position, final int currentSpan, final RecyclerView.State state) {
-        return v -> {
-            if (listener != null)
-                listener.onClick(context, view, position, currentSpan, state);
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (listener != null)
+                    listener.onClick(context, view, position, currentSpan, state);
+            }
         };
     }
 

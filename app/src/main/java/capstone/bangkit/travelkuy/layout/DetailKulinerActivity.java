@@ -23,8 +23,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Objects;
-
 import capstone.bangkit.travelkuy.R;
 import capstone.bangkit.travelkuy.api.Api;
 import capstone.bangkit.travelkuy.model.ModelKuliner;
@@ -50,7 +48,7 @@ public class DetailKulinerActivity extends AppCompatActivity implements OnMapRea
 
         //show maps
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        Objects.requireNonNull(mapFragment).getMapAsync(this);
+        mapFragment.getMapAsync(this);
 
         modelKuliner = (ModelKuliner) getIntent().getSerializableExtra("detailKuliner");
         if (modelKuliner != null) {

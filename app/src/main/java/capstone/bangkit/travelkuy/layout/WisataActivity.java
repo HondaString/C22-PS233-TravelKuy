@@ -20,6 +20,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +38,7 @@ public class WisataActivity extends AppCompatActivity implements WisataAdapter.o
     LayoutMarginDecoration gridMargin;
     WisataAdapter kulinerAdapter;
     ProgressDialog progressDialog;
-    List<ModelWisata> modelKuliner = new ArrayList<>();
+    List<ModelWisata> modelWisata = new ArrayList<>();
     Toolbar tbWisata;
 
     @Override
@@ -45,7 +47,7 @@ public class WisataActivity extends AppCompatActivity implements WisataAdapter.o
         setContentView(R.layout.activity_wisata);
 
         tbWisata = findViewById(R.id.toolbar_wisata);
-        tbWisata.setTitle("Daftar Wisata");
+        tbWisata.setTitle("Daftar Wisata ");
         setSupportActionBar(tbWisata);
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -66,6 +68,50 @@ public class WisataActivity extends AppCompatActivity implements WisataAdapter.o
         getWisata();
     }
 
+    private void getJson()
+    {
+        String json;
+        progressDialog.show();
+
+
+        try {
+            progressDialog.dismiss();
+
+
+            InputStream is = getAssets().open("recomWisata.json");
+
+            int size = is.available();
+
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+
+            json = new String(buffer, "UTF-8");
+
+            JSONArray jsonArray = new JSONArray(json);
+
+            for(int i = 0; i <jsonArray.length();i++)
+            {
+                JSONObject obj = jsonArray.getJSONObject(i);
+                ModelWisata data = new ModelWisata();
+                data.setIdWisata(obj.getString("id"));
+                data.setTxtNamaWisata(obj.getString("place_name"));
+                data.setGambarWisata(obj.getString("image"));
+                data.setKategoriWisata(obj.getString("category"));
+                modelWisata.add(data);
+                showWisata();
+            }
+
+        }catch (IOException e)
+        {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Toast.makeText(WisataActivity.this,
+                    "Gagal menampilkan data!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
     private void getWisata() {
         progressDialog.show();
         AndroidNetworking.get(Api.Wisata)
@@ -84,7 +130,7 @@ public class WisataActivity extends AppCompatActivity implements WisataAdapter.o
                                 dataApi.setTxtNamaWisata(temp.getString("nama"));
                                 dataApi.setGambarWisata(temp.getString("gambar_url"));
                                 dataApi.setKategoriWisata(temp.getString("kategori"));
-                                modelKuliner.add(dataApi);
+                                modelWisata.add(dataApi);
                                 showWisata();
                             }
                         } catch (JSONException e) {
@@ -104,7 +150,7 @@ public class WisataActivity extends AppCompatActivity implements WisataAdapter.o
     }
 
     private void showWisata() {
-        kulinerAdapter = new WisataAdapter(WisataActivity.this, modelKuliner, this);
+        kulinerAdapter = new WisataAdapter(WisataActivity.this, modelWisata, this);
         rvWisata.setAdapter(kulinerAdapter);
     }
 

@@ -1,54 +1,46 @@
 [
     {
-        "id": "3",
-        "Name": "Grand Livio Kuta Hotel",
+        "id": "1",
+        "Name": "Hotel Harper Purwakarta",
         "Ratings": "4.4",
         "Price": "176,762.00",
-        "Addres": "Jl. Dewi Sri No.17, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.707926067445976, 115.1789058788881",
+        "Addres": "Jl. Raya Bungursari No.122, Bungursari, Kabupaten Purwakarta, Jawa Barat 41181",
+        "Coordinate": "-6.478927, 107.481261",
         "Description": "A 6 km drive from Bali Ngurah Rai International Airport, this trendy hotel is 1 km from buzzy Jalan Legian and 2 km from Legian Beach. Funky, colorful rooms offer minibars, flat-screen TVs and free Wi-Fi, as well as desks, safes, and tea and coffeemaking facilities. Upgraded rooms add living areas. Room service is available 24/7. Complimentary amenities include parking, and an international breakfast buffet. There's also a striking restaurant, and a bar with a streetfront terrace, plus an outdoor pool, and clubs for children age 12 and under.",
-        "Lat": "-8.707.926.067",
-        "Long": "1.151.789.059",
-        "Images": "https://pix10.agoda.net/hotelImages/161/1612647/1612647_16101216460047680684.jpg?ca=6&ce=1&s=1024x768"
+        "Images": "https://dev.farizdotid.com/api/halopwk/gambar/hotel/hotel_harper.jpeg"
+    },
+    {
+        "id": "2",
+        "Name": "Prime Plaza Hotel Purwakarta",
+        "Ratings": "4.3",
+        "Price": "305,266.00",
+        "Addres": "Kawasan Industri Kota Bukit Indah Blok L, Cinangka, Bungursari, Cinangka, Bungursari, Kabupaten Purwakarta, Jawa Barat 41181",
+        "Coordinate": "-6.439420, 107.463123",
+        "Description": "Among shops and eateries on a bustling commercial street, this modern hotel is 4 km from lively Kuta Beach and 6 km from Ngurah Rai International Airport. Warmly furnished rooms feature Wi-Fi, flat-screen TVs and minifridges, as well as en suite bathrooms with free-standing tubs and additional flat-screens; some add furnished balconies. Room service is available 24/7. Breakfast is offered. There's also a relaxed restaurant, a gym and a spa, plus a rooftop terrace with an outdoor pool and a bar. Parking is available.",
+        "Images": "https://dev.farizdotid.com/api/halopwk/gambar/hotel/2.jpg"
+    },
+    {
+        "id": "3",
+        "Name": "Hotel Khalista",
+        "Ratings": "4.3",
+        "Price": "283,500.00",
+        "Addres": "Jl. Veteran No.1, Mulyamekar, Kec. Purwakarta, Kabupaten Purwakarta, Jawa Barat 41115",
+        "Coordinate": "-6.514203, 107.454851",
+        "Description": "In a tree-lined area near shops and restaurants, this modern hotel is a 10-minute walk from Kuta Beach and 5 km from Ngurah Rai International Airport. Bright rooms feature flat-screens, free Wi-Fi and minifridges, plus tea and coffeemakers. Suites and family rooms add separate living areas. Some quarters have balconies and/or direct access to an outdoor pool. Room service is available. A free shuttle to Kuta Beach is available. A sleek rooftop terrace offers a pool, a bar and an eatery. There's also a casual restaurant with a street facing deck. Other amenities include a gym and a spa, as well as an additional outdoor pool on ground level.",
+        "Images": "https://dev.farizdotid.com/api/halopwk/gambar/hotel/hotel_khalista.jpg"
     },
     {
         "id": "4",
-        "Name": "Mega Boutique Hotel & Spa",
-        "Ratings": "4.3",
-        "Price": "305,266.00",
-        "Addres": "SImpang Siur, Jl. Bypass Ngurah Rai No.259, Kuta, Denpasar Selatan, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.721310373139259, 115.18644739196829",
-        "Description": "Among shops and eateries on a bustling commercial street, this modern hotel is 4 km from lively Kuta Beach and 6 km from Ngurah Rai International Airport. Warmly furnished rooms feature Wi-Fi, flat-screen TVs and minifridges, as well as en suite bathrooms with free-standing tubs and additional flat-screens; some add furnished balconies. Room service is available 24/7. Breakfast is offered. There's also a relaxed restaurant, a gym and a spa, plus a rooftop terrace with an outdoor pool and a bar. Parking is available.",
-        "Lat": "-8.721.310.373",
-        "Long": "1.151.864.474",
-        "Images": "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-dskt/tix-hotel/images-web/2020/10/28/a9687edd-e394-43d9-a43d-ffd2e10bd5f1-1603889379011-d989a7fb278f05c3631e17177d2bf383.jpg"
+        "Name": "Hotel Permata Purwakarta",
+        "Ratings": "4.4",
+        "Price": "243,832.00",
+        "Addres": "Jalan Raya Sadang-Subang Km. 1, Bungur Sari, Ciwangi, Bungursari, Kabupaten Purwakarta, Jawa Barat 41181",
+        "Coordinate": "-6.514815, 107.467902",
+        "Description": "Set in a polished roadside building surrounded by palm trees, this modern hotel is 6 km from the Petitenget Temple, 7 km from Seminyak Beach, and 17 km from the silver and gold shops of Celuk Village. Warmly decorated rooms feature balconies, Wi-Fi and flat-screen TVs, as well as minibars, and tea and coffeemakers. Suites add DVD players and iPod docks, plus living areas and kitchenettes. Room service is available 24/7. Breakfast and parking are complimentary. There's also an airy restaurant, along with a gym and an outdoor pool.",
+        "Images": "https://dev.farizdotid.com/api/halopwk/gambar/hotel/hotel_permata.jpg"
     },
     {
         "id": "5",
-        "Name": "The ONE Legian",
-        "Ratings": "4.3",
-        "Price": "283,500.00",
-        "Addres": "Jl. Raya Legian No.117, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.714040123752303, 115.17360076101478",
-        "Description": "In a tree-lined area near shops and restaurants, this modern hotel is a 10-minute walk from Kuta Beach and 5 km from Ngurah Rai International Airport. Bright rooms feature flat-screens, free Wi-Fi and minifridges, plus tea and coffeemakers. Suites and family rooms add separate living areas. Some quarters have balconies and/or direct access to an outdoor pool. Room service is available. A free shuttle to Kuta Beach is available. A sleek rooftop terrace offers a pool, a bar and an eatery. There's also a casual restaurant with a street facing deck. Other amenities include a gym and a spa, as well as an additional outdoor pool on ground level.",
-        "Lat": "-8.714.040.124",
-        "Long": "1.151.736.008",
-        "Images": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/80/a7/20/sky-pool--v8045648.jpg?w=900&h=-1&s=1"
-    },
-    {
-        "id": "6",
-        "Name": "Quest San Hotel Denpasar by ASTON",
-        "Ratings": "4.4",
-        "Price": "243,832.00",
-        "Addres": "Jl. Mahendradatta No.93, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80117",
-        "Coordinate": "-8.677243218009908, 115.19045399667871",
-        "Description": "Set in a polished roadside building surrounded by palm trees, this modern hotel is 6 km from the Petitenget Temple, 7 km from Seminyak Beach, and 17 km from the silver and gold shops of Celuk Village. Warmly decorated rooms feature balconies, Wi-Fi and flat-screen TVs, as well as minibars, and tea and coffeemakers. Suites add DVD players and iPod docks, plus living areas and kitchenettes. Room service is available 24/7. Breakfast and parking are complimentary. There's also an airy restaurant, along with a gym and an outdoor pool.",
-        "Lat": "-8.677.243.218",
-        "Long": "115.190.454",
-        "Images": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/45171835.jpg?k=104b3c7b1b7249bb3c409f7806406e786065fcec4f7e12ccb898b34fb4c34b2d&o=&hp=1"
-    },
-    {
-        "id": "7",
         "Name": "Hadi Poetra Hotel",
         "Ratings": "4.2",
         "Price": "187,789.00",
@@ -58,101 +50,5 @@
         "Lat": "-8.728.228.682",
         "Long": "1.151.768.218",
         "Images": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10004980-d656731a45f7d5556546d555485b11ab.jpeg?tr=q-40,c-at_max,w-1280,h-720&_src=imagekit"
-    },
-    {
-        "id": "8",
-        "Name": "POP! Hotel Teuku Umar",
-        "Ratings": "4",
-        "Price": "187,501.00",
-        "Addres": "Jl. Teuku Umar No.74, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar, Bali 80113",
-        "Coordinate": "-8.679809043801406, 115.20384807278518",
-        "Description": "Set in the town center, this colorful, contemporary hotel is 4 km from the Bali Museum, 6 km from Seminyak Beach and 12 km from Ngurah Rai International Airport. Offering free Wi-Fi, the bright, modern rooms also come with flat-screen TVs and air-conditioning. The hotel provides free parking, as well as a breakfast buffet, which is served in a vibrant dining room.",
-        "Lat": "-8.679.809.044",
-        "Long": "1.152.038.481",
-        "Images": "https://pix10.agoda.net/hotelImages/230/230470/230470_15080710530033839490.jpg?ca=5&ce=1&s=1024x768"
-    },
-    {
-        "id": "9",
-        "Name": "Hotel Neo Denpasar by ASTON",
-        "Ratings": "4.4",
-        "Price": "235,203.00",
-        "Addres": "Jl. Gatot Subroto Barat, Padangsambian Kaja, Kec. Denpasar Bar., Kota Denpasar, Bali 80117",
-        "Coordinate": "-8.636521610430902, 115.19295921142802",
-        "Description": "Set in a modern building, this stylish, contemporary hotel is 5 km from the Bali Museum, 9 km from the buzzing Seminyak area and 11 km from Legian Beach. The polished, minimalist rooms have flat-screen TVs, minibars and free Wi-Fi, as well as safes, and tea and coffeemakers. Upgraded rooms add complimentary breakfast and may have garden views, while suites include balconies and living rooms with sofas. There's a trendy, casual restaurant with a bar. Other amenities include an outdoor pool and a fitness center. Beauty treatments are available.",
-        "Lat": "-863.652.161",
-        "Long": "1.151.929.592",
-        "Images": "https://denpasartourism.com/images/hotel-villa/5cb408c14f984.jpg"
-    },
-    {
-        "id": "10",
-        "Name": "BEST WESTERN Kuta Villa",
-        "Ratings": "4.2",
-        "Price": "291,456.00",
-        "Addres": "Jl. Nyangnyang Sari, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.733302826584517, 115.17654141595072",
-        "Description": "Set 3 km from Ngurah Rai International Airport, this polished hotel is also 6 km from Seminyak beach. The modern rooms offer free WiFi, flat-screen TVs, minifridges and 24-hour room service. Many have garden views; some feature terraces with outdoor showers. Suites add private plunge pools. Breakfast and parking are complimentary. There's an international restaurant, 2 bars and a cafe, as well as an outdoor pool, a 24-hour business center and BBQ grills.",
-        "Lat": "-8.733.302.827",
-        "Long": "1.151.765.414",
-        "Images": "https://www.oyster.com/wp-content/uploads/sites/35/2019/05/pool-v8994583-1440-1024x683.jpg"
-    },
-    {
-        "id": "11",
-        "Name": "ASTON Denpasar Hotel & Convention Center",
-        "Ratings": "4.3",
-        "Price": "263,403.00",
-        "Addres": "Jl. Gatot Subroto Barat No.283, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80111",
-        "Coordinate": "-8.639328959951705, 115.20612697755939",
-        "Description": "Featuring a stately entrance with a circular driveway, this upscale business hotel is 3.4 km from the Bali Museum and 12 km from vibrant Legian Beach. Low-key rooms with modern furnishings feature free Wi-Fi and flat-screen TVs, plus minifridges, safes, and tea and coffeemaking facilities. Suites add living rooms and soaking tubs. Room service is available. Freebies include breakfast and welcome drinks. There's a casual restaurant offering halal cuisine. Additional perks include a gym and a spa, plus 3 pools, 2 kids' pools, and a polished lobby with stone-carved murals. There's also a business center, a grand ballroom and a conference center.",
-        "Lat": "-863.932.896",
-        "Long": "115.206.127",
-        "Images": "https://www.denpasarkota.go.id/uploads/datang/datang_193108090838_SetiapJumatSore,AstonDenpasarHotelConventionCenterHadirkanNongkrongBareng.jpg"
-    },
-    {
-        "id": "12",
-        "Name": "Instyle Kuta Hotel Bali\u200b\u200b",
-        "Ratings": "4.4",
-        "Price": "Nan",
-        "Addres": "Jl. Dewi Sri I No.16, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.70192621229162, 115.17840364066421",
-        "Description": "In an area with multiple eateries, this relaxed hotel with a modern vibe is 2 km from the lively Legian Beach and 8 km from Ngurah Rai International Airport. Bright, streamlined rooms have Wi-Fi, flat-screen TVs and balconies, plus tea and coffeemakers. Suites add sitting areas. Some quarters offer direct pool access. There's room service. Amenities include a sleek bistro, a coffee shop and an outdoor pool, as well as a rooftop terrace with bar service. Breakfast, parking and an airport shuttle are available.",
-        "Lat": "-8.701.926.212",
-        "Long": "1.151.784.036",
-        "Images": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/175012715.jpg?k=93e51e0c435db4a00d3e3cfa1e6e5ecdfd570c64becf3dd212229b915e85c609&o=&hp=1"
-    },
-    {
-        "id": "13",
-        "Name": "Kyriad Royal Seminyak Bali",
-        "Ratings": "4.5",
-        "Price": "Nan",
-        "Addres": "Jl. Sunset Road Jl. Nakula Gg. Baik-Baik No.1, Seminyak, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.692522362149882, 115.17333374434601",
-        "Description": "Nan",
-        "Lat": "-8.692.522.362",
-        "Long": "1.151.733.337",
-        "Images": "https://origin.pegipegi.com/jalan/images/pict1L/Y4/Y938224/Y938224001.jpg"
-    },
-    {
-        "id": "14",
-        "Name": "Duo Legian Hotel",
-        "Ratings": "4.3",
-        "Price": "329,254.00",
-        "Addres": "Jl. Batu Pageh Gg. Melani, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.709335050716854, 115.17308241519616",
-        "Description": "Set near shops and eateries, this casual hotel is a 3-minute walk from bustling Legian Street and 18 minutes on foot from Legian Beach. It's 8 km from Ngurah Rai International Airport. Simple rooms provide free Wi-Fi, satellite TV and air-conditioning. Amenities include complimentary parking, an informal restaurant and a terrace. There's 24-hour security. An airport shuttle is available by request for a surcharge.",
-        "Lat": "-8.709.335.051",
-        "Long": "1.151.730.824",
-        "Images": "https://ak-d.tripcdn.com/images/200d0h0000008sz097D5F_R_550_412_R5_Q70_D.jpg"
-    },
-    {
-        "id": "15",
-        "Name": "Urban Style Biz Premier (Formerly Berry Biz Hotel)",
-        "Ratings": "4.1",
-        "Price": "208,651.00",
-        "Addres": "Jl. Sunset Road No.99, Seminyak, Kec. Kuta, Kabupaten Badung, Bali 80361",
-        "Coordinate": "-8.697923957487985, 115.17770106794954",
-        "Description": "A 4-minute walk from the interactive galleries at the 3D Dream Museum Zone Bali (DMZ), this laid-back hotel sits 5 km from both Kuta Beach and Waterbom Bali water park. Colorful rooms offer Wi-Fi, as well as flat-screen TVs, minibars, and tea and coffeemakers. They also include desks with dry erase boards. Some rooms are female only. Suites add separate living areas. Room service is available. Amenities include a lobby lounge, a trendy 24-hour coffee shop and a business center. Meeting rooms and breakfast are available.",
-        "Lat": "-8.697.923.957",
-        "Long": "1.151.777.011",
-        "Images": "https://pix10.agoda.net/hotelImages/22216885/-1/13f7763d3ebe2b76c836c58f82488c45.jpg?ca=17&ce=1&s=1024x768"
     }
 ]

@@ -29,7 +29,7 @@ Here is the initial project plan!
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | Andika Kurnia Sandi Yuda  | A2193F1828  | https://github.com/BabeZxyuan | creating a prototype in figma, Developer Mobile Application, Project Evalution | DONE |  Mobile Developer |
 | Rosalina Wijayanti  | A2006F0489  | https://github.com/andromedaquila | create userflow in figma, Project Plan, Design Validation, Final Report | DONE | Mobile Developer 
-| Fachira Ayu Rahma | C2144F1645  | https://github.com/rarahma20 | Recurement Engineering, Performance Monitoring | PENDING | Cloud Computing |
-| Afri Handri Setiawan | C2262G2266 | https://github.com/Afri392 | Integrate System | PENDING | Cloud Computing |
+| Fachira Ayu Rahma | C2144F1645  | https://github.com/rarahma20 | Recurement Engineering, Performance Monitoring | UNFINISHED | Cloud Computing |
+| Afri Handri Setiawan | C2262G2266 | https://github.com/Afri392 | Integrate System | UNFINISHED | Cloud Computing |
 | Lutfan Zainul Haq | M7225F2086 | https://github.com/aluthxander | Research, Create Marchine Learning Model | DONE | Machine Learning |
 | Fransiskus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 | Testing, Final Report | DONE | Machine Learning |

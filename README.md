@@ -13,7 +13,7 @@ Here is the initial project plan!
 - Lastly hopefully this app will cover all the fantastic and heavenly places that Indonesia has to offer for you! Rest assured! we will accompany you to the end of heaven! Let us know your destination at TravelKuy!
 
 ## Project Documents:
-- Project Brief : https://docs.google.com/document/d/1j11phumE7y6B3MMVmjMLVbXCSBF3dGqRfVkRDof6cHQ/edit?usp=sharing
+- Project Brief : https://docs.google.com/document/d/1DMeBbW4qfUIWCL_k2G_xLQk9YRFdSLtw3cLIRup_fk4/edit?usp=sharing
 - Prototype figma : https://www.figma.com/proto/aVZWihUS3mRin0tJVIi23G/TravelKuy?node-id=1%3A5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2
 - UserFlow Figma : https://www.figma.com/file/aVZWihUS3mRin0tJVIi23G/TravelKuy?node-id=24%3A2
 - Final presentation : https://docs.google.com/presentation/d/1hUr7tTsTPTuPqC2LWI9aALffVptLp1RN5KBNlZ4bkts/edit?usp=sharing

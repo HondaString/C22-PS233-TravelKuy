@@ -22,7 +22,6 @@ Here is the initial project plan!
 - Paper Reference: 
     1. https://api2.kemenparekraf.go.id/storage/app/uploads/public/622/b18/b5b/622b18b5b058e991538330.pdf
     2. http://ejournal.kemenparekraf.go.id/index.php/jki/issue/view/10/8 
-    3. ```dst```
     
 
 ## Capstone Project Team: 
@@ -32,5 +31,5 @@ Here is the initial project plan!
 | Rosalina Wijayanti  | A2006F0489  | https://github.com/andromedaquila | create userflow in figma, Project Plan, Design Validation, Final Report | PENDING | Mobile Developer 
 | Fachira Ayu Rahma | C2144F1645  | https://github.com/rarahma20 | Recurement Engineering, Performance Monitoring | PENDING | Cloud Computing |
 | Afri Handri Setiawan | C2262G2266 | https://github.com/Afri392 | Integrate System | PENDING | Cloud Computing |
-| Lutfan Zainul Haq | M7225F2086 | https://github.com/aluthxander | Research, Create Marchine Learning Model | PENDING | Machine Learning |
-| Fransiskus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 | Testing, Final Report | PENDING | Machine Learning |
+| Lutfan Zainul Haq | M7225F2086 | https://github.com/aluthxander | Research, Create Marchine Learning Model | DONE | Machine Learning |
+| Fransiskus Riswan Indra Simbolon  | M2430F3008 | https://github.com/riswan29 | Testing, Final Report | DONE | Machine Learning |
